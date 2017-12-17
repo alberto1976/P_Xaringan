@@ -224,10 +224,11 @@ Similarly, the Shiny mode (`runtime: shiny`) does not work. I might get these is
 See the next page for two HTML widgets.
 
 ---
+# UN sede Bogotá 
 
-```{r out.width='100%', fig.height=6, eval=require('leaflet')}
+```{r out.width='100%', fig.height=6, eval=require('leaflet'), echo=FALSE}
 library(leaflet)
-leaflet() %>% addTiles() %>% setView(-93.65, 42.0285, zoom = 17)
+leaflet() %>% addTiles() %>% setView(-74.0841, 4.63858, zoom = 16)
 ```
 
 ---
