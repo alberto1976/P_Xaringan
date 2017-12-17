@@ -464,6 +464,17 @@ plot(iris$Sepal.Length, iris$Petal.Length, col = "red")
 
 ---
 
+class: center
+
+# Gráfico con Ggplot2
+
+```{r, echo=FALSE, warning=FALSE}
+library(ggplot2)
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, col = Species, shape = Species))+ geom_point(size = 4)
+```
+
+---
+
 class: center, middle
 
 # Thanks!
