@@ -457,7 +457,7 @@ Press `h` or `?` to see the possible ninjutsu you can use in remark.js.
 
 class: center
 
-# Una Figura Final
+# Figura Final
 ```{r, echo=FALSE}
 plot(iris$Sepal.Length, iris$Petal.Length, col = "red")
 ```
