@@ -1,7 +1,12 @@
 xaringan::moon_reader:
   lib_dir: libs
+  css: "Modificado.css"
   nature:
     highlightStyle: github
     highlightLines: true
     countIncrementalSlides: false
-  css: ["Apariencia.css"]  
+  includes:
+    after_body: libs/unal/html/scripts.html
+    in_header: libs/unal/html/style.html
+
+

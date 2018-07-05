@@ -478,8 +478,8 @@ ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, col = Species, shape = Spec
 
 class: center, middle
 
-# Thanks!
+# Gracias!
 
-Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
+Diapositivas creadas con el paquete  [**xaringan**](https://github.com/yihui/xaringan).
 
 The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
