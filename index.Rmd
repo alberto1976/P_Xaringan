@@ -483,3 +483,29 @@ class: center, middle
 Diapositivas creadas con el paquete  [**xaringan**](https://github.com/yihui/xaringan).
 
 The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
+
+---
+
+background-image: url(http://novus.kairos.team/images/LOGOSIMBOLO_A_COLOR_LATERAL.png)
+background-size: 100px
+background-position: 90% 8%
+
+# GGPLOT2 interactivo
+
+```{r, echo=FALSE, warning=FALSE,  fig.width = 1, fig.height = 1}
+library(ggplot2)
+library(ggiraph)
+theme_set(theme_minimal())
+
+dataset <- mtcars
+dataset$carname <- row.names(dataset)
+gg_point_1 <- ggplot(dataset, aes(x = disp, y = qsec, tooltip = carname, data_id = carname, color= wt) ) +
+      geom_vline(aes(xintercept=250), color="blue", size =1) +
+      geom_hline(aes(yintercept=19), color="red", size =1) +
+      theme(panel.background = element_rect(colour="green")) +
+geom_point_interactive(size=3)
+  
+# htmlwidget call
+
+ggiraph(code = print(gg_point_1), zoom_max = 5, hover_css = "fill:red;r:1pt;")
+```
